@@ -1,0 +1,10 @@
+﻿@model IEnumerable<CaravanMVC.Models.Passenger>
+
+<h1>Passengers</h1>
+
+<ul>
+    @foreach(var passenger in Model)
+    {
+        <li>Passenger: @passenger.Name, Wagon: @passenger.Wagon.Name</li>
+    }
+</ul>

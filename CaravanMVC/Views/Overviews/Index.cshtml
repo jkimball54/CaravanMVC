@@ -1,0 +1,13 @@
+﻿@{
+    List<string> Destinations = ViewData["DistinctDestinations"] as List<string>;
+}
+<h1>Overview</h1>
+<h2>Average Age: @ViewData["AverageAge"]</h2>
+
+<h3>Destinations</h3>
+<ul>
+    @foreach(var destination in Destinations)
+    {
+        <li>@destination</li>
+    }
+</ul>

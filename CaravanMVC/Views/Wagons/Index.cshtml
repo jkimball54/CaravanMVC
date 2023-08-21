@@ -4,5 +4,5 @@
 
 @foreach(Wagon wagon in Model)
 {
-    <p><a href="/wagons/@wagon.Id">@wagon.Name</a></p>
+    <p><a href="/wagons/@wagon.Id">@wagon.Name</a> Passenger Count: @wagon.PassengerCount(), Average Age: @wagon.AverageAge()</p>
 }

@@ -1,0 +1,12 @@
+﻿@model Wagon
+
+<form method="post" action="/Wagons/@Model.Id/Passengers">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name"></input>
+    <label for="Age">Age:</label>
+    <input type="number" id="Age" name="Age"></input>
+    <label for="Destination">Destination:</label>
+    <input type="text" id="Destination" name="Destination"></input>
+
+    <button type="submit">Add Passenger</button>
+</form>

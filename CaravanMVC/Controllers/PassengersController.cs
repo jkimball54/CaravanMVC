@@ -13,9 +13,11 @@ namespace CaravanMVC.Controllers
             _context = context;
         }
 
+        [Route("/PassengerList")]
         public IActionResult Index()
         {
-            return View();
+            var passengers = _context.Passengers.Include(p => p.Wagon);
+            return View(passengers);
         }
 
         [Route("/Wagons/{wagonId:int}/Passengers/New")]
